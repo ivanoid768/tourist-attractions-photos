@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/tourist-attractions-photos/static/js/runtime~main.599a9788.js"
   },
   {
-    "revision": "221f87f0697211267682",
-    "url": "/tourist-attractions-photos/static/js/main.221f87f0.chunk.js"
+    "revision": "8bfd15c6b2c7eedad657",
+    "url": "/tourist-attractions-photos/static/js/main.8bfd15c6.chunk.js"
   },
   {
     "revision": "0c9eefb6b004de59600c",
     "url": "/tourist-attractions-photos/static/js/1.0c9eefb6.chunk.js"
   },
   {
-    "revision": "221f87f0697211267682",
+    "revision": "8bfd15c6b2c7eedad657",
     "url": "/tourist-attractions-photos/static/css/main.86767a99.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tourist-attractions-photos/static/css/1.8b8c6c08.chunk.css"
   },
   {
-    "revision": "51b2708dfbf51ec694bec559e26a2f18",
+    "revision": "7f03dddf847a2c04d805f52b65da94e0",
     "url": "/tourist-attractions-photos/index.html"
   }
 ];
