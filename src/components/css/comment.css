@@ -1,0 +1,29 @@
+.comment {
+	list-style: none;
+	text-align: initial;
+	margin-top: 16px;
+	/* border-bottom: solid 1px #ccc; */
+}
+
+.comment_attrs {
+	text-align: initial;
+	position: relative;
+	margin: 3px 0px;
+}
+
+.comment_author {
+	display: inline-block;
+	font-weight: bolder;
+}
+
+.comment_created_at {
+	display: inline-block;
+	float: right;
+}
+
+.comment_message {
+	font-size: 1.2em;
+	/* margin-bottom: 7px; */
+}
+
+.comment_replay {}

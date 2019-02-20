@@ -1,0 +1,31 @@
+.new_comment_cntr {
+	margin-bottom: 20px;
+	background-color: #9e9e9e05;
+	padding: 2px;
+}
+
+.new_comment_textarea {}
+
+.new_comment_btn_cntr {
+	margin-top: 8px;
+	text-align: right;
+}
+
+.auth_redirect_cntr {
+	text-align: center;
+	font-size: large;
+	padding: 10px;
+	border: 1px solid #cccccc0f;
+}
+
+.authorize_redirect {
+	display: inline-block;
+	background-color: #d3d3d37a;
+	padding: 3px 10px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+a.authorize_redirect:hover {
+	background-color: #9e9e9e4a;
+}

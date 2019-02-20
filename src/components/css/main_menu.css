@@ -1,0 +1,29 @@
+.menu_item {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.menu_item_cntr {
+	display: block;
+}
+
+.header-menu {
+	display: table;
+}
+
+.main_menu {
+	display: table-cell;
+	white-space: nowrap;
+}
+
+.search_cntr {
+	display: table-cell;
+	width: 100%;
+}
+
+.main_menu, .search_cntr {
+	vertical-align: middle;
+}
+
+.menu_home {}

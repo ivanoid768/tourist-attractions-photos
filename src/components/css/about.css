@@ -1,0 +1,64 @@
+.about_cntr {
+	max-width: 1200px;
+	font-family: Arial, sans-serif, serif;
+	font-size: large;
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.about_lang {
+	font-weight: bold;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+
+.about_description {}
+
+.about_lang_cntr {
+	margin-bottom: 15px;
+}
+
+.about_dev_cntr {}
+
+.about_photo {
+	/* background-image: url('https://via.placeholder.com/150'); */
+	background-image: url('/imgs/47808845.png');
+	width: 150px;
+	height: 150px;
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.about_desc_cont_cntr {
+	margin-left: 160px;
+}
+
+.about_dev_description_en {
+	margin-bottom: 15px;
+}
+
+.about_dev_description_ru {
+	margin-bottom: 15px;
+}
+
+.about_dev_contacts {}
+
+.contact {
+	display: block;
+	margin: 5px 0px;
+}
+
+.contacts_title {}
+
+@media(max-width:576px) {
+	.about_desc_cont_cntr {
+		margin-left: 0px;
+	}
+	.about_photo {
+		width: 100%;
+		margin-bottom: 10px;
+		background-position-x: center;
+	}
+}

@@ -1,0 +1,27 @@
+.no_single_photo_from_pexels_cntr {
+	text-align: center;
+	height: 65vh;
+	font-size: x-large;
+	border: 1px solid #cccccc66;
+	background-color: #9e9e9e03;
+	box-sizing: border-box;
+	margin: 3px;
+}
+
+.no_single_photo_from_pexels_text_cntr {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.no_single_photo_from_pexels_text {}
+
+.no_single_photo_from_pexels_link {}
+
+.nspfp_link_cntr {}
+
+.no_single_photo_from_pexels_cntr:before {
+	content: close-quote;
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}

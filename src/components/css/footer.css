@@ -1,0 +1,88 @@
+footer {
+	height: 100px;
+	background-color: #6f9846c9;
+	font-size: large;
+	color: black;
+}
+
+.developed-by {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.contacts-cntr {
+	padding-left: 5px;
+}
+
+.email-cntr {}
+
+.github-cntr {}
+
+.email-cntr a {
+	margin-left: 4px;
+	color: black;
+	font-family: sans-serif;
+}
+
+.github-cntr a {}
+
+.github-cntr a img {
+	height: 25px;
+}
+
+.contacts-cntr>div {}
+
+footer>div {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.developed-by span {
+	vertical-align: middle;
+	font-family: sans-serif;
+	white-space: nowrap;
+	/* text-overflow: ellipsis; */
+	/* overflow: hidden; */
+}
+
+.developed-by:before, .contacts-cntr:before {
+	content: close-quote;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contacts {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contacts>div {}
+
+.email-cntr a:hover {
+	border-bottom: 2px solid black;
+}
+
+.github-cntr a:hover {
+	border-bottom: 2px solid black;
+}
+
+@media(max-width: 576px) {
+	.developed-by {
+		width: 70%;
+	}
+	.contacts-cntr {
+		width: 30%;
+	}
+}
+
+@media(max-width: 320px) {
+	.developed-by {
+		width: 75%;
+	}
+	.contacts-cntr {
+		width: 25%;
+	}
+}
