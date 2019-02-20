@@ -2,6 +2,7 @@
 	"name": "unsplash_react",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "http://ivanoid768.github.io/tourist-attractions-photos",
 	"dependencies": {
 		"antd": "^3.12.1",
 		"axios": "^0.18.0",
@@ -15,6 +16,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "bash bin/dev.sh",
 		"temp": "serve -c playground/serve.json playground/ > playground/temp.txt",
 		"temp2": "serve -c playground/serve.json playground/ > /dev/null 2>&1 &",
@@ -28,5 +31,8 @@
 		"not dead",
 		"not ie <= 11",
 		"not op_mini all"
-	]
+	],
+	"devDependencies": {
+		"gh-pages": "^2.0.1"
+	}
 }
