@@ -12,7 +12,6 @@ export { getPhotos as get_photos };
 
 function fromUnsplash() {
 	const access_key = '0f349dea9c68a0c54614aa914b044480402bb816fa0cc21820ab83dcaa371b40';
-	const secret_key = '5478cc4e61453f0c9e0dac866f490d9a613b8ee99acff3a8e8667f75277a6d86';
 	const axi = axios.create({
 		baseURL: 'https://api.unsplash.com/search/photos',
 		// baseURL: 'http://localhost:5000/unsplash_tourist_attraction.json',
