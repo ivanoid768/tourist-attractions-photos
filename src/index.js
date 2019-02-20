@@ -9,7 +9,7 @@ import { redirectIfDisqusAccessToken } from './common/disqus'
 redirectIfDisqusAccessToken()
 
 ReactDOM.render((
-	<Router>
+	<Router basename={process.env.PUBLIC_URL}>
 		<Route path="/" component={App} />
 	</Router>
 ), document.getElementById('root'));
