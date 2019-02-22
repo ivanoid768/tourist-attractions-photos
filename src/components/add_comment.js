@@ -72,7 +72,7 @@ class NewComment extends Component {
 		// console.log(document.cookie);
 		// debugger
 
-		window.location.assign(`https://disqus.com/api/oauth/2.0/authorize/?client_id=${api_key}&scope=read,write&response_type=code&redirect_uri=http://localhost:4000/disqus_api/access_token/`)
+		window.location.assign(`https://disqus.com/api/oauth/2.0/authorize/?client_id=${api_key}&scope=read,write&response_type=code&redirect_uri=https://blooming-garden-52718.herokuapp.com/disqus_api/access_token/`)
 	}
 
 	createThread() {
