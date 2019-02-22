@@ -8,16 +8,16 @@ export default (props) => {
 				<span className="about_lang">EN</span>
 				<div className="about_description">
 					The site lets you to search for the best photos of Tourist Attractions from three top free photo stock resouces <a
-						href="https://unsplash.com">Unsplash</a>, <a href="https://pixabay.com">Pixabay</a>, <a href="https://pexels.com">Pexels</a>.
-					Also you can leave comment to some photo via <a href="https://disqus.com">Disqus</a>.
+						href="https://unsplash.com" rel="noopener noreferrer" target="_blank" >Unsplash</a>, <a rel="noopener noreferrer" target="_blank" href="https://pixabay.com">Pixabay</a>, <a rel="noopener noreferrer" target="_blank" href="https://pexels.com">Pexels</a>.
+					Also you can leave comment to some photo via <a rel="noopener noreferrer" target="_blank" href="https://disqus.com">Disqus</a>.
 			</div>
 			</div>
 			<div className="about_lang_cntr">
 				<span className="about_lang">RU</span>
 				<div className="about_description">
-					Данный сайт позволяет получить лучшие фотографии мировых достопремечательностей сразу с трёх источников <a href="https://">Unsplash</a>, <a
-						href="https://">Pixabay</a>, <a href="https://">Pexels</a>.
-				А так же позволяет оставлять свое мнение насчёт фотографии с помощью сервиса <a href="https://">Disqus</a>.
+					Данный сайт позволяет получить лучшие фотографии мировых достопремечательностей сразу с трёх источников <a rel="noopener noreferrer" target="_blank" href="https://unsplash.com">Unsplash</a>, <a
+						href="https://pixabay.com" rel="noopener noreferrer" target="_blank" >Pixabay</a>, <a rel="noopener noreferrer" target="_blank" href="https://pexels.com">Pexels</a>.
+				А так же позволяет оставлять свое мнение насчёт фотографии с помощью сервиса <a rel="noopener noreferrer" target="_blank" href="https://disqus.com">Disqus</a>.
 				</div>
 			</div>
 			<div className="about_dev_cntr">
@@ -38,7 +38,7 @@ export default (props) => {
 					<div className="about_dev_contacts">
 						<div className="contact contacts_title">Contacts: </div>
 						<a href="mailto:ivanoid256@india.com" className="contact">E-mail</a>
-						<a href="https://github.com/ivanoid768" className="contact">Github</a>
+						<a href="https://github.com/ivanoid768" rel="noopener noreferrer" target="_blank" className="contact">Github</a>
 					</div>
 				</div>
 			</div>

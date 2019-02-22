@@ -12,7 +12,7 @@ export default () => (
 				</a>
 				</div>
 				<div className="github-cntr">
-					<a href="https://github.com/ivanoid768">
+					<a href="https://github.com/ivanoid768" rel="noopener noreferrer" target="_blank" >
 						<img src="/tourist-attractions-photos/imgs/GitHub_Logo.png" alt="github.com/ivanoid256" />
 					</a>
 				</div>
