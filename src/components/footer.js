@@ -13,7 +13,7 @@ export default () => (
 				</div>
 				<div className="github-cntr">
 					<a href="https://github.com/ivanoid768">
-						<img src="/imgs/GitHub_Logo.png" alt="github.com/ivanoid256" />
+						<img src="/tourist-attractions-photos/imgs/GitHub_Logo.png" alt="github.com/ivanoid256" />
 					</a>
 				</div>
 			</div>
