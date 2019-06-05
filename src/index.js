@@ -5,13 +5,21 @@ import App from './App';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import { redirectIfDisqusAccessToken } from './common/disqus'
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+
+const client = new ApolloClient({
+	uri: "http://localhost:4000/graphql"
+});
 
 redirectIfDisqusAccessToken()
 
 ReactDOM.render((
-	<Router basename={process.env.PUBLIC_URL}>
-		<Route path="/" component={App} />
-	</Router>
+	<ApolloProvider client={client}>
+		<Router basename={process.env.PUBLIC_URL}>
+			<Route path="/" component={App} />
+		</Router>
+	</ApolloProvider>
 ), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

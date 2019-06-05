@@ -5,8 +5,11 @@
 	"homepage": "http://ivanoid768.github.io/tourist-attractions-photos",
 	"dependencies": {
 		"antd": "^3.12.1",
+		"apollo-boost": "^0.4.0",
 		"axios": "^0.18.0",
+		"graphql": "^14.3.0",
 		"react": "^16.7.0",
+		"react-apollo": "^2.5.6",
 		"react-dom": "^16.7.0",
 		"react-router-dom": "^4.3.1",
 		"react-scripts": "2.1.3"

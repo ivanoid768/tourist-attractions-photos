@@ -62,7 +62,7 @@ class App extends Component {
 			gallary: g
 		})
 
-		this.getPhotos(page)
+		// this.getPhotos(page)
 	}
 
 	getPhotos(page = 1) {
@@ -116,7 +116,7 @@ class App extends Component {
 			gallary: g
 		})
 		if (this.props.location.pathname === '/gallary/1') {
-			this.getPhotos()
+			// this.getPhotos()
 		} else {
 			if (value && value != '')
 				this.props.history.push(`/gallary/1?search=${value}`)
