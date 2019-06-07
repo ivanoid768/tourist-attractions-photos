@@ -14,7 +14,7 @@ export default (props) => {
 				</div>
 			</div>
 			<img border="0" className="main_image" alt={props.main_image_link} src={props.main_image_link}>
-			</img><div className="img_description">{getPhotoDescription(props)}</div>
+			</img><div className="img_description">{props.description}</div>
 		</div>
 	)
 }

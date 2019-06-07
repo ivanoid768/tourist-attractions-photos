@@ -1,4 +1,6 @@
 import React from 'react'
+import { Query } from 'react-apollo';
+import { gql } from 'apollo-boost';
 import Image from '../components/image'
 import NewComment from '../components/add_comment';
 import getPhotoById from '../request/getPhotoById';
@@ -11,8 +13,8 @@ class ImagePage extends React.Component {
 		super(props)
 
 		this.state = {
-			photo: null,
-			direct_link: null
+			photo: props.photo || null,
+			direct_link: props.direct_link || null
 		}
 
 		this.getPhoto = this.getPhoto.bind(this)
@@ -84,7 +86,7 @@ class ImagePage extends React.Component {
 	componentDidMount() {
 		console.log('didMount', this.state);
 
-		this.getPhoto()
+		// this.getPhoto()
 	}
 
 	componentDidUpdate() {
@@ -95,4 +97,39 @@ class ImagePage extends React.Component {
 
 }
 
-export default ImagePage;
+const GQLImagePage = (props) => {
+
+	let id = props.match.params.id.split(':')[1];
+	let source_name = props.match.params.id.split(':');
+	source_name = (source_name && source_name[0]) ? source_name[0].toLowerCase() : null;
+
+	return (
+		<Query
+			variables={{ id: id, source_name: source_name }}
+			query={gql`
+				query Photo($id: String, $source_name: String){
+					photo(id:$id,source_name:$source_name){
+						author_name,
+						main_image_link,
+						source_link,
+						author_link,
+						source_name,
+						description
+					}
+				}
+			`}
+		>
+			{({ loading, error, data }) => {
+				if (loading) return <p>Loading...</p>;
+				if (error) return <p>Error :(</p>;
+
+				if (data.photo.main_image_link)
+					return <ImagePage {...props} photo={data.photo} />
+				else
+					return <ImagePage {...props} direct_link={`https://pixabay.com/en/photos/${id}/`} />
+			}}
+		</Query>
+	)
+}
+
+export default GQLImagePage;
