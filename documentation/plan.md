@@ -2,3 +2,5 @@
 2. Get photo details from graphql server -
 2.1 Add description - done
 2.2 Add direct link to an image if API don't let get one image by id - done
+3. Install Redux - done
+4. Connect search input and photos' list via redux - done

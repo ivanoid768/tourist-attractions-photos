@@ -3,6 +3,7 @@ import { List, Card, Pagination, Input } from 'antd';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import { Query } from "react-apollo";
 import { gql } from "apollo-boost";
+import { connect } from 'react-redux';
 import { getPhotoDescription } from '../App'
 import NoPhotosFound from './notices/NoPhotosFound'
 import './css/gallary.css'
@@ -160,4 +161,9 @@ const GQLGallary = (props) => {
 	)
 };
 
-export default GQLGallary;
+
+export default connect(store => {
+	return {
+		search: store.photoReducer.search
+	}
+})(GQLGallary);

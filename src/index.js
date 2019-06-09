@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import { redirectIfDisqusAccessToken } from './common/disqus'
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
+import { Provider as ReduxProvider } from 'react-redux';
+import store from './redux/store';
 
 const client = new ApolloClient({
 	uri: "http://localhost:4000/graphql"
@@ -15,11 +17,13 @@ const client = new ApolloClient({
 redirectIfDisqusAccessToken()
 
 ReactDOM.render((
-	<ApolloProvider client={client}>
-		<Router basename={process.env.PUBLIC_URL}>
-			<Route path="/" component={App} />
-		</Router>
-	</ApolloProvider>
+	<ReduxProvider store={store}>
+		<ApolloProvider client={client}>
+			<Router basename={process.env.PUBLIC_URL}>
+				<Route path="/" component={App} />
+			</Router>
+		</ApolloProvider>
+	</ReduxProvider>
 ), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

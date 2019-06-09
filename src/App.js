@@ -18,7 +18,7 @@ class App extends Component {
 		this.state = {
 			gallary: {
 				photos: [{}],
-				search: null,
+				// search: null,
 				paginationCurrent: 1,
 				paginationTotal: null,
 				paginationPerPage: per_page * 3,
